@@ -1,0 +1,7 @@
+services:
+  leetcode-python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: leetcode-python
+    container_name: leetcode-python

@@ -1,2 +1,7 @@
-# leetcode-python
-Open Source resource for learning Data Structures &amp; Algorithms and LeetCode implementation in Python Programming Language 🇨🇳
+# LeetCode - Python
+
+[![Static Badge](https://img.shields.io/badge/Language-Python-e0ZOGecume)](https://www.python.org/)
+[![codecov](https://codecov.io/gh/shilin83/leetcode-python/graph/badge.svg?token=QcT95fwwjP)](https://codecov.io/gh/shilin83/leetcode-python)
+[![Workflow Status](https://img.shields.io/github/actions/workflow/status/shilin83/leetcode-python/ci.yml?branch=main&style=flat-square&logo=github&label=CI)](https://github.com/shilin83/leetcode-python/actions)
+[![Static Badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?style=flat-square&logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+![Repo size](https://img.shields.io/github/repo-size/shilin83/leetcode-python.svg?style=flat-square&label=Repo%20size)
