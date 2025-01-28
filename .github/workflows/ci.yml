@@ -1,0 +1,28 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*_test.py"
+  pull_request:
+jobs:
+  run_tests_and_upload_codecov:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+          cache: pip
+      - name: install dependencies
+        run: pip install -r requirements.txt
+      - name: run tests
+        run: pytest --cov --cov-report=xml --cov-config=.coveragerc
+      - name: upload codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
