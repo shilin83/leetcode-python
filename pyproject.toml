@@ -1,0 +1,31 @@
+[project]
+name = "leetcode-python"
+version = "0.1.0"
+description = "LeetCode implemented in Python, 100% test coverage"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.5",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v -q"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".venv",
+]
+
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
