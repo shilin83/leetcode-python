@@ -7,6 +7,7 @@
 
 ## 题库列表
 
-| 序号                                      | 题目                                             | 难度 | 标签  |
-|:----------------------------------------|:-----------------------------------------------|:--:|:---:|
-| [0001](src/problems/twoSum/solution.py) | [✅ 两数之和](https://leetcode.cn/problems/two-sum) | 简单 | 哈希表 |
+| 序号                                             | 题目                                                     | 难度 | 标签  |
+|:-----------------------------------------------|:-------------------------------------------------------|:--:|:---:|
+| [0002](src/problems/addTwoNumbers/solution.py) | [✅ 两数相加](https://leetcode.cn/problems/add-two-numbers) | 中等 | 链表  |
+| [0001](src/problems/twoSum/solution.py)        | [✅ 两数之和](https://leetcode.cn/problems/two-sum)         | 简单 | 哈希表 |
