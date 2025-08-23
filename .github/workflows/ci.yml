@@ -1,0 +1,24 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*_test.py"
+  pull_request:
+jobs:
+  run_tests_and_upload_codecov:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: drivendataorg/setup-python-uv-action@main
+        with:
+          python-version: 3.13
+          cache: packages
+          cache-dependency-path: pyproject.toml
+      - run: uv run pytest --cov --cov-report=xml --cov-config=.coveragerc
+      - uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
